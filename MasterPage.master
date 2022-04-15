@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 900%;
+        }
+        .style2
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table align="center" class="style1">
+        <tr>
+            <td>
+                <asp:Image ID="Image1" runat="server" Height="103px" 
+                    ImageUrl="~/Images/Banner.png" Width="246px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <table class="style2">
+                        <tr>
+                            <td class="style3"><h2>Welcome To SankalchandPatel University</h2>
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Image ID="Image2" runat="server" Height="321px" 
+                    ImageUrl="~/Images/Footer.jpg" Width="1631px" style="text-align: center" />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
