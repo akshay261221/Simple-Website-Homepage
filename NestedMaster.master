@@ -57,7 +57,7 @@
                     </tr>
                     <tr>
                         <td class="style7">
-                            <asp:LinkButton ID="LinkButton3" runat="server">Amission</asp:LinkButton>
+                            <asp:LinkButton ID="LinkButton3" runat="server">Admission</asp:LinkButton>
                         </td>
                         <td class="style7">
                             &nbsp;</td>
